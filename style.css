@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --primaryColor:#4285F4;
+    --secondaryColor:#0F9D58;
+    --tertiaryColor:#DB4437;
+    --quaternaryColor:#F4B400;
+}
+.navColor{
+    background-color: var(--primaryColor);
+}
+header{
+    margin-top: 40px;
+}
+nav{
+    font-size: 1.3em;
+   box-shadow: 4px 4px 4px 4px gray;
+}
+a{
+    color:#ffffff;
+}
+.animate__backInLeft{
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.0, 0.0, 1.0, 1.0);
+}
+.animate__bounceInRight{
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.0, 0.0, 1.0, 1.0);
+}
+.animate__bounceInUp{
+    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(0.0, 0.0, 1.0, 1.0);
+}
+.dscLogo{
+    
+    height: 80px;
+}
+.inlin{
+    display: inline;
+}
+.memberButton{
+    background-color: var(--secondaryColor);
+    color:#ffffff;
+    border-radius: 30px !important;
+    padding: 20px;
+}
+.everyone{
+    border-radius: 70%;
+    object-fit: cover;
+}
+
+.v{
+    color: var(--primaryColor) !important;
+}
+.j{
+    color: var(--tertiaryColor) !important;
+}
+.t{
+    color: var(--quaternaryColor) !important;
+}
+.vjti{
+    color:var(--primaryColor) !important;
+}
+.cit{
+    width: 100%;
+    margin-top: 20px;
+
+   
+ display: grid;
+place-items: center;
+ grid-template-columns: repeat(2,1fr);
+ grid-gap: 40px;
+}
+
+@media(max-width:768px){
+    .cit{
+        grid-template-columns: 1fr;
+    }
+    .rightGrid{
+        order: 1;
+        place-items: center;
+    }
+    .leftGrid{
+      margin-top: -20px;
+        order: 2;
+    }
+}
